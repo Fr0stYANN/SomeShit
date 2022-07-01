@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\Server.csproj": {}
+    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\Server.csproj": {
+    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\wilka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\obj\\",
+        "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Phoenix\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wilka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phoenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
