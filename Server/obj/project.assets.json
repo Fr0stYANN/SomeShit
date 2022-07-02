@@ -611,6 +611,31 @@
             "rid": "win"
           }
         }
+      },
+      "Server.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Server.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Server.Business.dll": {}
+        }
+      },
+      "Server.MSSQL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "Microsoft.Data.SqlClient": "4.1.0",
+          "Server.Business": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Server.MSSQL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Server.MSSQL.dll": {}
+        }
       }
     }
   },
@@ -2333,12 +2358,24 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Server.Business/1.0.0": {
+      "type": "project",
+      "path": "../Server.Business/Server.Business.csproj",
+      "msbuildProject": "../Server.Business/Server.Business.csproj"
+    },
+    "Server.MSSQL/1.0.0": {
+      "type": "project",
+      "path": "../Server.MSSQL/Server.MSSQL.csproj",
+      "msbuildProject": "../Server.MSSQL/Server.MSSQL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Dapper >= 2.0.123",
-      "Microsoft.Data.SqlClient >= 4.1.0"
+      "Microsoft.Data.SqlClient >= 4.1.0",
+      "Server.Business >= 1.0.0",
+      "Server.MSSQL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2367,7 +2404,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj": {
+              "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj"
+            },
+            "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj": {
+              "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

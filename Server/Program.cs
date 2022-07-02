@@ -1,5 +1,5 @@
-using Server.Interfaces;
-using Server.Repositories;
+using Server.Business.Interfaces;
+using Server.MSSQL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
