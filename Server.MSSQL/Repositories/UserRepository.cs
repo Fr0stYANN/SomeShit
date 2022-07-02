@@ -1,26 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Server.Business.Interfaces;
+﻿using Server.Business.Interfaces;
 using Server.Business.Entities;
 using System.Data;
 using Microsoft.Data.SqlClient;
 using Dapper;
+using Microsoft.Extensions.Configuration;
 
 namespace Server.MSSQL.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        string ConnectionString = @"Data Source=sql.bsite.net\MSSQL2016;Initial Catalog=fr0styann_sana;User ID=fr0styann_sana;Password=Sana2022;TrustServerCertificate=true";
+        private readonly string connectionString;
+        public UserRepository(IConfiguration configuration)
+        {
+            this.connectionString = configuration.GetConnectionString("MsSql");
+        }
         public int Create(User user)
         {
             string sqlQuery = @"INSERT INTO Users
-                              (Email, FirstName, LastName, Password) 
+                              (Email, Firstname, Lastname, Password) 
                               OUTPUT INSERTED.Id 
-                              VALUES(@Email, @FirstName,@LastName, @Password)";
-            using IDbConnection connection = new SqlConnection(ConnectionString);
+                              VALUES(@Email, @Firstname,@Lastname, @Password)";
+            using IDbConnection connection = new SqlConnection(connectionString);
                   var userId = connection.ExecuteScalar<int>(sqlQuery, user);
               return userId;
         }
@@ -29,7 +29,7 @@ namespace Server.MSSQL.Repositories
         {
             string sqlQuery = @"DELETE FROM Users 
                                 WHERE Id = @Id";
-            using IDbConnection connection = new SqlConnection(ConnectionString);
+            using IDbConnection connection = new SqlConnection(connectionString);
                 connection.Execute(sqlQuery, new { Id = userId });
         }
 
@@ -37,23 +37,23 @@ namespace Server.MSSQL.Repositories
         {
             string sqlQuery = @"SELECT * FROM Users
                                 WHERE Email = @Email";
-            using IDbConnection connection = new SqlConnection(ConnectionString);
+            using IDbConnection connection = new SqlConnection(connectionString);
                   var user = connection.QueryFirstOrDefault<User>(sqlQuery, new { Email = email });
             return user;
         }
         public void Update(User user)
         {
             string sqlQuery = @"UPDATE Users 
-                             SET Email = @Email, FirstName = @FirstName, LastName = @LastName,Password = @Password 
+                             SET Email = @Email, Firstname = @Firstname, Lastname = @Lastname,Password = @Password 
                              WHERE Id = @Id";
-            using IDbConnection connection = new SqlConnection(ConnectionString);
+            using IDbConnection connection = new SqlConnection(connectionString);
                   connection.Execute(sqlQuery, user);  
         }
         public User GetById(int userId)
         {
             string sqlQuery = @"SELECT * FROM Users 
                                 WHERE Id = @Id";
-            using IDbConnection connection = new SqlConnection(ConnectionString);
+            using IDbConnection connection = new SqlConnection(connectionString);
                   var user = connection.QueryFirstOrDefault<User>(sqlQuery, new { Id = userId });
             return user;
         }

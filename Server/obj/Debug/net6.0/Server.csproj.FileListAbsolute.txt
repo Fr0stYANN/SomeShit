@@ -73,3 +73,7 @@ C:\Users\Phoenix\Desktop\Repo\timetracker\Server\obj\Debug\net6.0\refint\Server.
 C:\Users\Phoenix\Desktop\Repo\timetracker\Server\obj\Debug\net6.0\Server.pdb
 C:\Users\Phoenix\Desktop\Repo\timetracker\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
 C:\Users\Phoenix\Desktop\Repo\timetracker\Server\obj\Debug\net6.0\ref\Server.dll
+C:\Users\Phoenix\Desktop\Repo\timetracker\Server\bin\Debug\net6.0\Server.Business.dll
+C:\Users\Phoenix\Desktop\Repo\timetracker\Server\bin\Debug\net6.0\Server.MSSQL.dll
+C:\Users\Phoenix\Desktop\Repo\timetracker\Server\bin\Debug\net6.0\Server.Business.pdb
+C:\Users\Phoenix\Desktop\Repo\timetracker\Server\bin\Debug\net6.0\Server.MSSQL.pdb
