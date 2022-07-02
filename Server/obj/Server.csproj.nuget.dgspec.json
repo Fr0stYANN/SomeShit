@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\Server.csproj": {}
+    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\Server.csproj": {
+    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\Server.csproj",
-        "projectName": "Server",
-        "projectPath": "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\wilka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wilka\\source\\repos\\TimeTracker\\Server\\obj\\",
+        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj",
+        "projectName": "Server.Business",
+        "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj",
+        "packagesPath": "C:\\Users\\Phoenix\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wilka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phoenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,6 +50,149 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj",
+        "projectName": "Server.MSSQL",
+        "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj",
+        "packagesPath": "C:\\Users\\Phoenix\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Phoenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj": {
+                "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj",
+        "projectName": "Server",
+        "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Phoenix\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Phoenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj": {
+                "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj"
+              },
+              "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj": {
+                "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
@@ -57,7 +200,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

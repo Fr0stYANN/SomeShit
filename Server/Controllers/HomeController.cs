@@ -9,7 +9,7 @@ namespace Server.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Hello world!";
+            return "Hello World!";
         }
     }
 }
