@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj": {}
+    "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj": {
+    "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.Business\\Server.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.Business\\Server.Business.csproj",
         "projectName": "Server.Business",
-        "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj",
+        "projectPath": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.Business\\Server.Business.csproj",
         "packagesPath": "C:\\Users\\Phoenix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\obj\\",
+        "outputPath": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Phoenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj": {
+    "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj",
+        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj",
         "projectName": "Server.MSSQL",
-        "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj",
+        "projectPath": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj",
         "packagesPath": "C:\\Users\\Phoenix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\obj\\",
+        "outputPath": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.MSSQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Phoenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj": {
-                "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj"
+              "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.Business\\Server.Business.csproj": {
+                "projectPath": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.Business\\Server.Business.csproj"
               }
             }
           }
@@ -130,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj": {
+    "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\Server.csproj",
+        "projectPath": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server\\Server.csproj",
         "packagesPath": "C:\\Users\\Phoenix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server\\obj\\",
+        "outputPath": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Phoenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -154,11 +154,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj": {
-                "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.Business\\Server.Business.csproj"
+              "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.Business\\Server.Business.csproj": {
+                "projectPath": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.Business\\Server.Business.csproj"
               },
-              "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj": {
-                "projectPath": "C:\\Users\\Phoenix\\Desktop\\Repo\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj"
+              "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj": {
+                "projectPath": "C:\\Users\\Phoenix\\Desktop\\trackertest\\timetracker\\Server.MSSQL\\Server.MSSQL.csproj"
               }
             }
           }
@@ -176,6 +176,22 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.123, )"
+            },
+            "GraphQL": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "GraphQL.Server.Transports.AspNetCore": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "GraphQL.Server.Transports.AspNetCore.SystemTextJson": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
